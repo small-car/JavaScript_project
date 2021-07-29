@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>我的</title>
+		<link rel="stylesheet" href="../css/public.css" />
+		<link rel="stylesheet" href="../css/my.css" />
+	</head>
+	<body>
+		<div>
+			<div class="sub-header">
+				<div class="back" style="display: none"></div>
+				<div class="title">个人中心</div>
+			</div>
+			<div class="user-info-wrap">
+				<div class="head">
+					<img src="../images/user/my/default-head.png" alt="" />
+				</div>
+				<div class="nickname">昵称</div>
+				<div class="points">我的积分：0</div>
+			</div>
+			<div class="order-name-wrap">
+				<div class="order-name">全部订单</div>
+				<div class="show-order">查看全部订单 ></div>
+			</div>
+			<div class="order-status-wrap">
+				<div class="item">
+					<div class="icon wait"></div>
+					<div class="text">待支付</div>
+				</div>
+				<div class="item">
+					<div class="icon take"></div>
+					<div class="text">待收货</div>
+				</div>
+				<div class="item">
+					<div class="icon comment"></div>
+					<div class="text">待评价</div>
+				</div>
+			</div>
+			<div class="menu-list-wrap">
+				<ul>
+					<li>个人资料</li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>收货地址</li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>绑定手机</li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>修改密码</li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>我的收藏</li>
+					<li></li>
+				</ul>
+				<div class="btn">登录/注册</div>
+			</div>
+			<div class="bottom-nav">
+				<div class="home">
+					<ul>
+						<li></li>
+						<li>首页</li>
+					</ul>
+				</div>
+				<div class="cart">
+					<ul>
+						<li></li>
+						<li>购物车</li>
+						<li class="spot" style="display: none"></li>
+					</ul>
+				</div>
+				<div class="my active">
+					<ul>
+						<li></li>
+						<li>我的</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="../js/rem.js"></script>
+		<script src="../js/axios.js"></script>
+		<div class="van-overlay" style="z-index: 2008; display: none"></div>
+		<div
+			role="dialog"
+			class="van-dialog"
+			style="z-index: 2009; display: none"
+			aria-labelledby="确认要退出吗？"
+		>
+			<div class="van-dialog__content">
+				<div class="van-dialog__message">确认要退出吗？</div>
+			</div>
+			<div
+				class="
+					van-hairline--top
+					van-dialog__footer van-dialog__footer--buttons
+				"
+			>
+				<button
+					class="
+						van-button van-button--default van-button--large
+						van-dialog__cancel
+					"
+				>
+					<span class="van-button__text">取消</span></button
+				><button
+					class="
+						van-button van-button--default van-button--large
+						van-dialog__confirm
+						van-hairline--left
+					"
+				>
+					<span class="van-button__text active">确认</span>
+				</button>
+			</div>
+		</div>
+		<script src="../js/my.js"></script>
+	</body>
+</html>
